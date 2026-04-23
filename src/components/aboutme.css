@@ -1,0 +1,31 @@
+.about-me{
+    text-align: center;
+    padding: 10px 15px;
+    background-color: blanchedalmond;
+
+}
+.about-me h2{
+    color: black;
+    margin-bottom: -15px;
+    padding: 20px;
+    font-size: 40px;
+    margin-top: 40px;
+    
+}
+.about-me h3{
+    padding: 15px 20px;
+    text-align: justify;
+}
+@media (max-width:786px) {
+
+    .about-me h2{
+        text-align: center;
+        margin-bottom: -15px;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    .about-me h3{
+        font-size: 20px;
+    }
+    
+}
