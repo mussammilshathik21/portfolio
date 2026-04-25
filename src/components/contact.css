@@ -3,7 +3,7 @@
     justify-content:space-evenly;
     align-items:flex-start;
     flex-wrap:wrap;
-    gap:25%;
+    gap:20%;
     padding:40px 20px;
     background-color: blanchedalmond;
 }
@@ -57,6 +57,9 @@
 
     .contact-me h3{
         font-size:30px;
+    }
+    .contact p{
+        font-size: 20px;
     }
 
     .form input,
