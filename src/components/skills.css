@@ -29,7 +29,7 @@
   padding: 20px;
   border-radius: 15px;
   background: #ffffff;
-  border: 2px solid #000;
+  border: 4px solid #000;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
@@ -48,8 +48,9 @@
 
 /* SKILL LIST */
 .card ul {
-  padding: 0;
-  margin: 0;
+  margin-left: 60px;
+
+
 }
 
 /* LIST ITEM */
@@ -62,17 +63,19 @@
   font-size: 16px;
 }
 
+
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
   .skill-head h2 {
     font-size: 35px;
-    text-align: start;
-    margin-right: 280px;
+    align-items:s;
+    margin-right: 270px;
   }
 
   .card {
     width: 90%;
     max-width: 270px;
   }
+
 }

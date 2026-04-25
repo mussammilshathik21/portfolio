@@ -22,8 +22,8 @@ function Project() {
           image={portfolio}
           title="My Protfolio"
           description="about me"
-          live="https://portfolio1-kappa-rust.vercel.app/"
-          github="https://github.com/mussammilshathik21/portfolio1"
+          live="https://portfolio-ms2.vercel.app/"
+          github="https://github.com/mussammilshathik21/portfolio"
         />
 
         

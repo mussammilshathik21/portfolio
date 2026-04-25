@@ -8,8 +8,8 @@
 
 nav{
     width:100%;
-    background:black;
-    color:white;
+    background:blanchedalmond;
+    color:black;
     position:sticky;
     top:0;
     z-index:1000;
@@ -30,7 +30,7 @@ nav{
 /* logo */
 
 .logo{
-    font-size:23px;
+    font-size:25px;
     font-weight:800;
 }
 
@@ -44,7 +44,7 @@ nav{
 .nav-links a{
     text-decoration:none;
     color:black;
-    font-size:18px;
+    font-size:20px;
     transition:0.3s;
 }
 

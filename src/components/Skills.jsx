@@ -5,6 +5,8 @@ import { GrMysql } from "react-icons/gr";
 import { FaPython } from "react-icons/fa";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
+import { SiVercel } from "react-icons/si";
+import { SiRender } from "react-icons/si";
 
 import SkillCard from "./SkillsCard"
 
@@ -20,7 +22,7 @@ function Skills() {
                 <div className="skill-head"><h2>Skills</h2></div>
                 <div className="skill-card">
                     <SkillCard
-                        title="Frontend"
+                        title="Frontend :"
                         skills={[
                             { icon: <FaHtml5 color="#E34F26" />, name: "HTML" },
                             { icon: <FaCss3Alt color="#1572B6" />, name: "CSS" },
@@ -30,7 +32,7 @@ function Skills() {
                         ]}
                     />
                     <SkillCard
-                        title="Backend"
+                        title="Backend :"
                         skills={[
                             { icon: <SiDjango color="#092E20" />, name: "DJANGO" },
                             { icon: <FaPython  color="#33a8f7" />, name: "PYTHON" },
@@ -38,11 +40,15 @@ function Skills() {
                         ]}
                     />
                     <SkillCard
-                        title="Tools"
+                        title="Tools :"
                         skills={[
                             { icon: <BiLogoVisualStudio  color="#007ACC" /> , name: "VS CODE" },
                             { icon: <FaGithub color="#181717" />, name: "GITHUB" },
                             { icon: <SiPostman  color="#FF6C37" />, name: "POSTMAN" },
+                            { icon: <SiVercel  color="#000"/>, name:"VERCEL" },
+                            { icon: <SiRender  color="#000"/>, name:"RENDER" },
+
+
                         ]}
                     />
 
