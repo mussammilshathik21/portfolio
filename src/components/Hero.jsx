@@ -16,7 +16,7 @@ function Hero(){
             </div>
             <div className="hero-name">
                  <h1>Hi, I'm <span>Mussammil Shathik</span></h1>
-                <h3>Full Stack Developer</h3>
+                <h3> - Full Stack Developer</h3>
                 <p>Motivated Full Stack Developer with hands-on experience in React, Django, HTML, CSS, and JavaScript. 
         I focus on building scalable, responsive, and user-friendly web applications. </p><br />
                 <div className="icon">

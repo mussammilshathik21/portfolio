@@ -6,6 +6,8 @@ import { FaPython } from "react-icons/fa";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
 
+import SkillCard from "./SkillsCard"
+
 import "./skills.css"
 
 
@@ -14,38 +16,40 @@ import "./skills.css"
 function Skills() {
     return (
         <section id="skills">
-        <div>
-            <div className="head">
-                <h3>Skills</h3></div>
             <div className="skills">
-                <div className="card" >
-                    <h3>Frontend :</h3>
-                    <ul>
-                        <li><FaHtml5  color="#E34F26"/> HTML</li>
-                        <li><FaCss3Alt color="#1572B6"/> CSS</li>
-                        <li><SiBootstrap color="#7952B3" />  Bootstarp</li>
-                        <li><FaJs color="#F7DF1E" /> JavaScript</li>
-                        <li><FaReact color="#61DAFB" /> React</li>
-                    </ul>
+                <div className="skill-head"><h2>Skills</h2></div>
+                <div className="skill-card">
+                    <SkillCard
+                        title="Frontend"
+                        skills={[
+                            { icon: <FaHtml5 color="#E34F26" />, name: "HTML" },
+                            { icon: <FaCss3Alt color="#1572B6" />, name: "CSS" },
+                            { icon: <SiBootstrap color="#7952B3" />, name: "Bootstrap" },
+                            { icon: <FaJs color="#F7DF1E" />, name: "JavaScript" },
+                            { icon: <FaReact color="#61DAFB" />, name: "React" }
+                        ]}
+                    />
+                    <SkillCard
+                        title="Backend"
+                        skills={[
+                            { icon: <SiDjango color="#092E20" />, name: "DJANGO" },
+                            { icon: <FaPython  color="#33a8f7" />, name: "PYTHON" },
+                            { icon: <GrMysql />, name: "MySql" },
+                        ]}
+                    />
+                    <SkillCard
+                        title="Tools"
+                        skills={[
+                            { icon: <BiLogoVisualStudio  color="#007ACC" /> , name: "VS CODE" },
+                            { icon: <FaGithub color="#181717" />, name: "GITHUB" },
+                            { icon: <SiPostman  color="#FF6C37" />, name: "POSTMAN" },
+                        ]}
+                    />
+
                 </div>
-                <div className="card">
-                    <h3>Backend :</h3>
-                    <ul>
-                        <li><SiDjango color="#092E20" />  Django</li>
-                        <li ><FaPython  color="#33a8f7" />  Python</li>
-                        <li><GrMysql />  MySql</li>
-                    </ul>
-                </div>
-                <div className="card">
-                    <h3>Tools :</h3>
-                    <ul>
-                        <li><BiLogoVisualStudio  color="#007ACC" />  VS Code</li>
-                        <li><FaGithub color="#181717" />  GitHub</li>
-                        <li><SiPostman  color="#FF6C37" />  Postman</li>
-                    </ul>
-                </div>
+
             </div>
-        </div>
+
         </section>
     )
 }

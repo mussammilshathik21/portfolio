@@ -10,7 +10,7 @@ function Project() {
     <div className="project">
       <div className="head-pro"><h3>Project</h3></div>
 
-      <div className="project-container" data-aos="zoom-in" data-aos-duration="2000">
+      <div className="project-container">
         <ProjectCard
           image={pro1}
           title="Fashion Ecommerce Website"

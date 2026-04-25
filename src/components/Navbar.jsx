@@ -13,7 +13,7 @@ function Navbar() {
 
         {/* Logo */}
         <div className="logo">
-          Portfolio
+          PORTFOLIO
         </div>
 
         {/* Hamburger */}

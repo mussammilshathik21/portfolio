@@ -1,77 +1,78 @@
-.skills{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
-    padding:20px;
-    background-color: blanchedalmond;
+/* SECTION WRAPPER */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: blanchedalmond;
 }
 
-/* heading */
-
-.head{
-    text-align:center;
-    font-size:35px;
-    background-color: blanchedalmond;
-    margin-top:50px;
-}
-body {
-  background: blanchedalmond;
+/* HEADING */
+.skill-head h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* card */
-
-.card{
-    width:320px;
-    min-height:240px;
-    border:3px solid rgb(5,0,0);
-    padding:20px;
-    text-align:center;
-    border-radius:15px;
-    background-color: white;
+/* CARD CONTAINER */
+.skill-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-/* title */
-
-.card h3{
-    font-size:25px;
-    text-align:left;
-    margin-bottom:10px;
+/* INDIVIDUAL CARD */
+.card {
+  width: 300px;
+  min-height: 240px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  border: 2px solid #000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-/* list items */
-
-.card li{
-    list-style: none;
-    margin-top: 10px;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    margin-left: 80px;
-    gap: 10px;
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-5px);
 }
 
-/* mobile */
+/* CARD TITLE */
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+}
 
-@media (max-width:768px){
+/* SKILL LIST */
+.card ul {
+  padding: 0;
+  margin: 0;
+}
 
-    .skills{
-        flex-direction:column;
-        align-items:center;
-    }
+/* LIST ITEM */
+.card li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
 
-    .card{
-        width:90%;
-        max-width:350px;
-    }
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
 
-    .card h3{
-        text-align:start;
-    }
-    .head h3{
-        text-align: start;
-        margin-left: 10px;
-    }
-    
+  .skill-head h2 {
+    font-size: 35px;
+    text-align: start;
+    margin-right: 330px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 270px;
+  }
 }
