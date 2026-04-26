@@ -1,90 +1,107 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosMail } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
-import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 function Contact() {
+  const [result, setResult] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  function sendEmail(e) {
-    e.preventDefault();
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setLoading(true);
+    setResult("Sending...");
 
-    emailjs.sendForm(
-      "service_6w1lzib",   // your service id
-      "rw1omt6",          // your template id
-      e.target,
-      "hHeTzQ_VFOIU3HDLn"  // your public key
-    )
-    .then(() => {
-      alert("Message sent successfully!");
-      e.target.reset();
-    })
-    .catch(() => {
-      alert("Failed to send message");
+    const formData = new FormData(event.target);
+    formData.append("access_key", "751a8c56-43da-4b28-8ff0-be7c6f09e80d");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
     });
-  }
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Message sent successfully ✅");
+      event.target.reset();
+    } else {
+      setResult("Something went wrong ❌");
+    }
+
+    setLoading(false);
+  };
 
   return (
     <section id="contact">
-    <div className="contact">
+      <div className="contact">
 
-      <div className="contact-me" data-aos="fade-right" data-aos-duration="1000">
-        <h3>Contact Me</h3>
+        {/* LEFT SIDE */}
+        <div className="contact-me" data-aos="fade-right" data-aos-duration="1000">
+          <h3>Contact Me</h3>
 
-        <p>
-          <IoIosMail color="red" />
-          mussammilshathik2@gmail.com
-        </p>
+          <p>
+            <IoIosMail color="red" />
+            mussammilshathik2@gmail.com
+          </p>
 
-        <p>
-          <FaGithub color="#181717" />
-          <a href="https://github.com/mussammilshathik21">
-            github/mussammilshathik21
-          </a>
-        </p>
+          <p>
+            <FaGithub />
+            <a href="https://github.com/mussammilshathik21" target="_blank" rel="noreferrer">
+              github/mussammilshathik21
+            </a>
+          </p>
 
-        <p>
-          <FaLinkedin color="#1889a8" />
-          <a href="https://www.linkedin.com/in/mussammil-shathik-033769404/">LinkedIn</a>
-        </p>
+          <p>
+            <FaLinkedin />
+            <a href="https://www.linkedin.com/in/mussammil-shathik-033769404/" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+          </p>
 
-        <p>
-          <FaPhone color="green" />
-          +91 8870394593
-        </p>
+          <p>
+            <FaPhone color="green" />
+            +91 8870394593
+          </p>
+        </div>
+
+        {/* RIGHT SIDE FORM */}
+        <div className="form" data-aos="fade-left" data-aos-duration="1000">
+          <form onSubmit={onSubmit}>
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              minLength="3"
+            /> <br /> <br />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            /> <br /> <br />
+
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea> <br /> <br />
+
+            <button type="submit" disabled={loading}>
+              {loading ? "Sending..." : "Send Message"}
+            </button>
+
+            {/* RESULT MESSAGE */}
+            <p className="form-result">{result}</p>
+
+          </form>
+        </div>
+
       </div>
-
-
-      <div className="form" data-aos="fade-left" data-aos-duration="1000">
-        <form onSubmit={sendEmail}>
-
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-          /> <br /><br />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-          /> <br /><br />
-
-          <textarea
-            name="message"
-            placeholder="Message"
-            required
-          ></textarea><br /><br />
-
-          <button type="submit">Send Message</button>
-
-        </form>
-      </div>
-
-    </div>
     </section>
   );
 }
