@@ -38,7 +38,7 @@ function Contact() {
       <div className="contact">
 
         {/* LEFT SIDE */}
-        <div className="contact-me" data-aos="fade-right" data-aos-duration="1000">
+        <div className="contact-me">
           <h3>Contact Me</h3>
 
           <p>
@@ -67,7 +67,7 @@ function Contact() {
         </div>
 
         {/* RIGHT SIDE FORM */}
-        <div className="form" data-aos="fade-left" data-aos-duration="1000">
+        <div className="form">
           <form onSubmit={onSubmit}>
 
             <input
