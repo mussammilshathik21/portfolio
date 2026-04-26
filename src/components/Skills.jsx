@@ -22,7 +22,7 @@ function Skills() {
                 <div className="skill-head"><h2>Skills</h2></div>
                 <div className="skill-card">
                     <SkillCard
-                    delay={100}
+                    
                         title="Frontend :"
                         skills={[
                             { icon: <FaHtml5 color="#E34F26" />, name: "HTML" },
@@ -33,7 +33,7 @@ function Skills() {
                         ]}
                     />
                     <SkillCard
-                    delay={300}
+                    
                         title="Backend :"
                         skills={[
                             { icon: <SiDjango color="#092E20" />, name: "DJANGO" },
@@ -42,7 +42,7 @@ function Skills() {
                         ]}
                     />
                     <SkillCard
-                    delay={500}
+                    
                         title="Tools :"
                         skills={[
                             { icon: <BiLogoVisualStudio  color="#007ACC" /> , name: "VS CODE" },
