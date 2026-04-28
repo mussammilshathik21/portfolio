@@ -2,7 +2,7 @@ import React from "react";
 import "./project.css";
 import ProjectCard from "./ProjectCard";
 import pro1 from "../assets/Project1.jpg";
-import portfolio from "../assets/image.png"
+import billingweb from "../assets/billingweb.png"
 
 function Project() {
   return (
@@ -19,11 +19,11 @@ function Project() {
           github="https://github.com/mussammilshathik21/react-ecommerce-frontend-only"
         />
          <ProjectCard 
-          image={portfolio}
-          title="My Protfolio"
-          description="about me"
-          live="https://portfolio-ms2.vercel.app/"
-          github="https://github.com/mussammilshathik21/portfolio"
+          image={billingweb}
+          title="Billing website"
+          description="billing web application using react"
+          live="https://billing-website-shathik.vercel.app/"
+          github="https://github.com/mussammilshathik21/billing-website"
         />
 
         

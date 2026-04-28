@@ -42,26 +42,26 @@ function Contact() {
           <h3>Contact Me</h3>
 
           <p>
-            <IoIosMail color="red" />
+            <IoIosMail color="#d60808" />
             mussammilshathik2@gmail.com
           </p>
 
           <p>
-            <FaGithub />
+            <FaGithub color="#000"/>
             <a href="https://github.com/mussammilshathik21" target="_blank" rel="noreferrer">
               github/mussammilshathik21
             </a>
           </p>
 
           <p>
-            <FaLinkedin />
+            <FaLinkedin color="#2ac9fa" />
             <a href="https://www.linkedin.com/in/mussammil-shathik-033769404/" target="_blank" rel="noreferrer">
               LinkedIn
             </a>
           </p>
 
           <p>
-            <FaPhone color="green" />
+            <FaPhone color="#2bb908" />
             +91 8870394593
           </p>
         </div>

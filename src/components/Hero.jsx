@@ -3,7 +3,7 @@ import sha from "../assets/shathik1.jpg"
 import { IoIosMail } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import resume from "../assets/Mussammil_Shathik _Resume.pdf"
+import resume from "../assets/Mussammil_Shathik_Resume.pdf"
 import "./Hero.css"
 
 
