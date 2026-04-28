@@ -54,7 +54,7 @@ function Contact() {
           </p>
 
           <p>
-            <FaLinkedin color="#2ac9fa" />
+            <FaLinkedin color="#3b90c9" />
             <a href="https://www.linkedin.com/in/mussammil-shathik-033769404/" target="_blank" rel="noreferrer">
               LinkedIn
             </a>
