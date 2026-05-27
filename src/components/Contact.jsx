@@ -56,11 +56,11 @@ export default function Contact() {
             <form onSubmit={onSubmit}>
               <div className="form-group">
                 <label htmlFor="cname">Your Name</label>
-                <input id="cname" type="text" name="name" placeholder="John Doe" required minLength="3" />
+                <input id="cname" type="text" name="name" placeholder="full name" required minLength="3" />
               </div>
               <div className="form-group">
                 <label htmlFor="cemail">Email Address</label>
-                <input id="cemail" type="email" name="email" placeholder="john@example.com" required />
+                <input id="cemail" type="email" name="email" placeholder="name@example.com" required />
               </div>
               <div className="form-group">
                 <label htmlFor="cmsg">Message</label>
