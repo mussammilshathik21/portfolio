@@ -1,0 +1,79 @@
+/* tab bar */
+.skills-tabs {
+  display: flex; gap: 6px;
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 13px; padding: 5px;
+  width: fit-content; margin: 0 auto 48px;
+  flex-wrap: wrap; justify-content: center;
+  box-shadow: 0 2px 12px rgba(0,161,155,0.07);
+}
+
+.tab-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem; font-weight: 600;
+  color: var(--muted); background: transparent;
+  border: none; border-radius: 9px; cursor: pointer;
+  padding: 10px 38px;
+  transition: all 0.3s var(--ease);
+  letter-spacing: 0.04em; white-space: nowrap;
+}
+.tab-btn:not(.tab-btn--active):hover {
+  color: var(--mint-dark);
+  background: var(--mint-glow);
+}
+.tab-btn--active {
+  background: var(--mint);
+  color: #ffffff;
+  box-shadow: 0 2px 16px rgba(0, 161, 155, 0.35);
+}
+
+/* grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(134px, 1fr));
+  gap: 14px;
+  animation: fadeUp 0.32s ease;
+}
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(14px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+.skill-item {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 13px;
+  padding: 26px 14px 20px;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 12px;
+  cursor: default;
+  transition: all 0.3s var(--ease);
+  animation: fadeUp 0.32s ease both;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.skill-item:hover {
+  border-color: var(--mint);
+  background: linear-gradient(145deg, #fff 60%, #e8f8f7);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0,161,155,0.15);
+}
+
+.skill-icon {
+  font-size: 2.2rem; line-height: 1;
+  display: flex; align-items: center;
+  transition: transform 0.3s var(--ease);
+}
+.skill-item:hover .skill-icon { transform: scale(1.12); }
+
+.skill-name {
+  font-size: 0.72rem; font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.09em; text-transform: uppercase;
+  text-align: center; transition: color 0.3s;
+}
+.skill-item:hover .skill-name { color: var(--mint-dark); }
+
+@media (max-width: 500px) {
+  .tab-btn { padding: 9px 22px; font-size: 0.86rem; }
+}

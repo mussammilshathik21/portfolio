@@ -1,0 +1,71 @@
+.contact-section { background: var(--surface); }
+
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1.2fr;
+  gap: 44px; align-items: start;
+}
+
+.contact-info-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700; font-size: 1.45rem;
+  color: var(--head); margin-bottom: 10px;
+}
+.contact-info-sub {
+  font-size: 0.9rem; color: var(--muted);
+  margin-bottom: 28px; line-height: 1.65;
+}
+
+.contact-links { display: flex; flex-direction: column; gap: 10px; }
+
+.contact-row {
+  display: flex; align-items: center; gap: 14px;
+  background: var(--card); border: 1.5px solid var(--border);
+  border-radius: 12px; padding: 14px 18px;
+  text-decoration: none; color: var(--text);
+  font-size: 0.88rem; font-weight: 500;
+  transition: all 0.3s var(--ease);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+.contact-row:hover {
+  border-color: var(--mint);
+  background: var(--mint-glow);
+  color: var(--mint-dark);
+  transform: translateX(5px);
+  box-shadow: 0 4px 16px rgba(0,161,155,0.12);
+}
+.contact-icon { color: var(--mint); font-size: 1.1rem; width: 20px; text-align: center; }
+
+/* form */
+.contact-form-wrap {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 16px; padding: 34px;
+  box-shadow: 0 4px 24px rgba(0,161,155,0.07);
+}
+
+.form-group { display: flex; flex-direction: column; gap: 7px; margin-bottom: 18px; }
+label {
+  font-size: 0.75rem; font-weight: 700;
+  color: var(--muted); letter-spacing: 0.09em; text-transform: uppercase;
+}
+input, textarea {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 10px; padding: 13px 16px;
+  color: var(--head);
+  font-family: 'DM Sans', sans-serif; font-size: 0.95rem;
+  outline: none; transition: border-color 0.3s, box-shadow 0.3s;
+  resize: vertical;
+}
+input::placeholder, textarea::placeholder { color: var(--muted); }
+input:focus, textarea:focus {
+  border-color: var(--mint);
+  box-shadow: 0 0 0 3px rgba(0,161,155,0.10);
+}
+textarea { min-height: 120px; }
+
+.submit-btn { width: 100%; justify-content: center; }
+.form-result { font-size: 0.88rem; margin-top: 12px; color: var(--mint-dark); font-weight: 500; }
+
+@media (max-width: 820px) { .contact-grid { grid-template-columns: 1fr; } }
+@media (max-width: 420px) { .contact-form-wrap { padding: 22px; } }
