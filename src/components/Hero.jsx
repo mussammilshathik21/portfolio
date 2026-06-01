@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { FiSend, FiCode, FiDownload } from 'react-icons/fi'
-import sha    from '../assets/ms.png'
 import resume from '../assets/resume.pdf'
+import profile from "../assets/profile.jpg";
 import './Hero.css'
 
 export default function Hero() {
@@ -53,7 +53,7 @@ export default function Hero() {
 
         {/* IMAGE — clean card, no animation */}
         <div className="hero-img-wrap">
-          <img src={sha} alt="Mussammil Shathik" className="hero-img" />
+          <img src={profile} alt="Mussammil Shathik" className="hero-img" />
           <div className="hero-img-deco" aria-hidden="true" />
         </div>
 
