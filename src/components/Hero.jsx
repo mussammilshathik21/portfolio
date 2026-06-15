@@ -44,10 +44,10 @@ export default function Hero() {
                target="_blank" rel="noreferrer" className="social-chip">
               <FaGithub /> GitHub
             </a>
-            <a href="https://www.instagram.com/mussammil_shathik/"
+            {/* <a href="https://www.instagram.com/mussammil_shathik/"
                target="_blank" rel="noreferrer" className="social-chip">
               <FaInstagram /> Instagram
-            </a>
+            </a> */}
           </div>
         </div>
 
