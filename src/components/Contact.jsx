@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa'
 import './Contact.css'
 
 const LINKS = [
-  { icon: <IoIosMail />,  label: 'mussammilshathik2@gmail.com', href: 'mailto:mussammilshathik2@gmail.com' },
+  { icon: <IoIosMail />,  label: 'mussammilshathik1@gmail.com', href: 'mailto:mussammilshathik1@gmail.com' },
   { icon: <FaPhone />,    label: '+91 88703 94593',              href: 'tel:+918870394593' },
   { icon: <FaGithub />,   label: 'github/mussammilshathik21',    href: 'https://github.com/mussammilshathik21', ext: true },
   { icon: <FaLinkedin />, label: 'LinkedIn Profile',             href: 'https://www.linkedin.com/in/mussammil-shathik-033769404/', ext: true },
