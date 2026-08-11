@@ -17,7 +17,7 @@ export default function Aboutme() {
         <div className="about-card">
           <div className="about-text">
             <p>
-              I am a motivated{' '}
+            {' '}
               <strong>Full Stack Developer</strong> with hands-on experience in
               React, Django, HTML, CSS, and JavaScript. I enjoy building
               responsive and user-friendly web applications — from polished

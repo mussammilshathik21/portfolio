@@ -24,7 +24,7 @@ export default function Hero() {
           <p className="hero-role">Full Stack Developer</p>
 
           <p className="hero-desc">
-            Motivated Full Stack Developer with hands-on experience in React,
+            Full Stack Developer with hands-on experience in React,
             Django, HTML, CSS, and JavaScript. I build scalable, responsive,
             and user-friendly web applications.
           </p>
