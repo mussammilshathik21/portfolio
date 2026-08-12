@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaPython } from 'react-icons/fa'
-import { SiDjango, SiBootstrap, SiPostman, SiVercel, SiRender, SiMysql } from 'react-icons/si'
+import { SiDjango, SiBootstrap, SiPostman, SiVercel, SiRender, SiMysql, SiSupabase } from 'react-icons/si'
 import { BiLogoVisualStudio } from 'react-icons/bi'
 import './Skills.css'
 
@@ -21,6 +21,8 @@ const TABS = [
       { icon:<SiDjango />,  color:'#0c6b4e', name:'Django' },
       { icon:<FaPython />,  color:'#3776AB', name:'Python' },
       { icon:<SiMysql />,   color:'#00618A', name:'MySQL'  },
+      { icon:<SiSupabase />,   color:'#036107', name:'SupaBase'  },
+        { icon:<SiRender />,           color:'#00868C', name:'Render'   },
     ],
   },
   {
@@ -30,7 +32,7 @@ const TABS = [
       { icon:<FaGithub />,           color:'#333',    name:'GitHub'   },
       { icon:<SiPostman />,          color:'#FF6C37', name:'Postman'  },
       { icon:<SiVercel />,           color:'#000',    name:'Vercel'   },
-      { icon:<SiRender />,           color:'#00868C', name:'Render'   },
+    
     ],
   },
 ]

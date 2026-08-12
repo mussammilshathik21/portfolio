@@ -1,6 +1,7 @@
 import ProjectCard from './ProjectCard'
 import pro1        from '../assets/Project1.jpg'
 import billingweb  from '../assets/billingweb.png'
+import tracker from '../assets/tracker.png'
 import './Project.css'
 
 const PROJECTS = [
@@ -19,6 +20,14 @@ const PROJECTS = [
     live:        'https://billing-web-shathik.vercel.app/',
     github:      'https://github.com/mussammilshathik21/billing-website',
     tags:        ['React', 'Vercel'],
+  },
+   {
+    image:       tracker,
+    title:       'Habit-Tracker Web Application',
+    description: 'Helps users build consistent daily habits, track progress and streaks, and improve their productivity and routines.',
+    live:        'https://habit-tracker-gules-seven.vercel.app/',
+    github:      'https://github.com/mussammilshathik21/Habit-Tracker',
+    tags:        ['React', 'Vercel , SupaBase'],
   },
 ]
 
