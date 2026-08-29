@@ -1,8 +1,8 @@
 import './Aboutme.css'
 
 const STATS = [
-  { num: '3+',  label: 'Projects Built'  },
-  { num: '5+',  label: 'Technologies'    },
+  { num: '4+',  label: 'Projects Built'  },
+  { num: '10+',  label: 'Technologies'    },
   { num: 'Fresher', label: 'Experience'      },
   { num: '∞',   label: 'Curiosity'       },
 ]
