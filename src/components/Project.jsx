@@ -2,16 +2,25 @@ import ProjectCard from './ProjectCard'
 import pro1        from '../assets/Project1.jpg'
 import billingweb  from '../assets/billingweb.png'
 import tracker from '../assets/tracker.png'
+import artgallery from '../assets/artgallery.png'
 import './Project.css'
 
 const PROJECTS = [
+  {
+    image:       artgallery,
+    title:       'Arts Gallery',
+    description: 'Arts Gallery is a full-featured React e-commerce storefront for browsing, favoriting, and purchasing original artwork, complete with cart/checkout, order tracking, and user accounts. It also includes a dedicated admin dashboard for managing products, orders, users, and site content — all in a warm teal, gold, black, and white theme.',
+    live:        'https://art-gallery-bay-nine.vercel.app/',
+    github:      'https://github.com/mussammilshathik21/art-gallery',
+    tags:        ['Html','css','React Js', 'Vercel','Supabase'],
+  },
   {
     image:       pro1,
     title:       'Fashion Ecommerce Website',
     description: 'A full-featured ecommerce web application built with React.js — product listing, cart functionality, and a clean shopping UI.',
     live:        'https://react-ecommerce-frontend-only.vercel.app/',
     github:      'https://github.com/mussammilshathik21/react-ecommerce-frontend-only',
-    tags:        ['React', 'Vercel'],
+    tags:        ['Html','css','React Js', 'Vercel','Django'],
   },
   {
     image:       billingweb,
