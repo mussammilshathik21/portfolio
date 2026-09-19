@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { FiSend, FiCode, FiDownload } from 'react-icons/fi'
-import resume from '../assets/resume.pdf'
+import cv from "../assets/cv.pdf"
 import profile from "../assets/profile.jpg";
 import './Hero.css'
 
@@ -32,7 +32,7 @@ export default function Hero() {
           <div className="hero-actions">
             <a href="#contact" className="btn-mint"><FiSend /> Hire Me</a>
             <a href="#project" className="btn-outline"><FiCode /> View Work</a>
-            <a href={resume} download className="btn-outline"><FiDownload /> Resume</a>
+            <a href={cv} download className="btn-outline"><FiDownload /> cv</a>
           </div>
 
           <div className="hero-socials">
